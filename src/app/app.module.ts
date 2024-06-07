@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { LayoutComponent } from './components/layout/layout.component';
+import { SharedModule } from './reutilizable/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LayoutComponent } from './components/layout/layout.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [
     provideAnimationsAsync()
