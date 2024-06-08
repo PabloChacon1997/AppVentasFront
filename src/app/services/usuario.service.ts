@@ -14,7 +14,7 @@ import { Usuario } from '../interfaces/usuario';
 })
 export class UsuarioService {
 
-  private urlApi: string = environment.endpoint+'/Usuario'
+  private urlApi: string = environment.endpoint+'Usuario'
   constructor(private http: HttpClient) { }
 
   incicarSesion(request: Login): Observable<ResponseApi> {
