@@ -11,7 +11,7 @@ import { Venta } from '../interfaces/venta';
   providedIn: 'root'
 })
 export class VentaService {
-  private urlApi: string = environment.endpoint+'/Venta'
+  private urlApi: string = environment.endpoint+'Venta'
   constructor(private http: HttpClient) { }
 
   registrar(request: Venta): Observable<ResponseApi> {

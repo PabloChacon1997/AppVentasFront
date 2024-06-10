@@ -12,7 +12,7 @@ import { Producto } from '../interfaces/producto';
   providedIn: 'root'
 })
 export class ProductoService {
-  private urlApi: string = environment.endpoint+'/Producto'
+  private urlApi: string = environment.endpoint+'Producto'
   constructor(private http: HttpClient) { }
 
   lista(): Observable<ResponseApi> {

@@ -30,7 +30,7 @@ export class UsuarioService {
   }
 
   editar(request: Usuario): Observable<ResponseApi> {
-    return this.http.put<ResponseApi>(`${this.urlApi}/Eidtar`, request)
+    return this.http.put<ResponseApi>(`${this.urlApi}/Editar`, request)
   }
   
   eliminar(id: number): Observable<ResponseApi> {

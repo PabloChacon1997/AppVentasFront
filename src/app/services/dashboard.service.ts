@@ -11,7 +11,7 @@ import { ResponseApi } from '../interfaces/response-api';
 })
 export class DashboardService {
 
-  private urlApi: string = environment.endpoint+'/Dashboard'
+  private urlApi: string = environment.endpoint+'Dashboard'
   constructor(private http: HttpClient) { }
 
   resumen(): Observable<ResponseApi> {

@@ -10,7 +10,7 @@ import { ResponseApi } from '../interfaces/response-api';
   providedIn: 'root'
 })
 export class MenuService {
-  private urlApi: string = environment.endpoint+'/Menu'
+  private urlApi: string = environment.endpoint+'Menu'
   constructor(private http: HttpClient) { }
 
   lista(idUsuario: number): Observable<ResponseApi> {
