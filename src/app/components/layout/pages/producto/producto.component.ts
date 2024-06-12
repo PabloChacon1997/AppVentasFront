@@ -33,7 +33,6 @@ export class ProductoComponent implements OnInit, AfterViewInit{
   obtenerProductos() {
     this._productoServicio.lista().subscribe({
       next: (data) => {
-        console.log(data)
         if(data.status) {
           this.dataListaProductos.data = data.value
         } else {
