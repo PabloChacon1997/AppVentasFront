@@ -13,8 +13,6 @@
       <mat-label>Buscar</mat-label>
       <input matInput (keyup)="aplicarFiltroTabla($event)" #input/>
     </mat-form-field>
-  </mat-card-content>
-
   <div class="mata-elevation-z2">
     <table mat-table [dataSource]="dataListaUsuarios">
       <ng-container matColumnDef="nombreCompleto">
@@ -55,4 +53,6 @@
 
     <mat-paginator [pageSizeOptions]="[5,10,20]" showFirstLastButtons></mat-paginator>
   </div>
+  </mat-card-content>
+
 </mat-card>
